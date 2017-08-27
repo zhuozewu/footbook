@@ -6,12 +6,14 @@ import java.util.Date;
  * Created by 匆匆の过客 on 2017/8/27.
  * 邮箱：1426654078@qq.com
  */
+
 public class User {
     private int user_id;  //用户id
     private String user_name ; //用户账号
     private String user_nick ;  //用户昵称
     private Date user_birthday ; //用户生日
     private String  user_sex ;  //用户性别
+    private String user_email ; //用户邮箱
     private String user_hometown ; //用户家乡
     private String user_location ;  //用户所在地
     private String user_password ;  //用户密码
@@ -21,6 +23,7 @@ public class User {
     private int user_listenNum ;  //用户听众数
     private Date user_loginTime ;  //时间用户注册
     private String user_introduction ;  //用户个人介绍
+
 
     public int getUser_id() {
         return user_id;
@@ -132,5 +135,34 @@ public class User {
 
     public void setUser_introduction(String user_introduction) {
         this.user_introduction = user_introduction;
+    }
+
+    public String getUser_email() {
+        return user_email;
+    }
+
+    public void setUser_email(String user_email) {
+        this.user_email = user_email;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "user_id=" + user_id +
+                ", user_name='" + user_name + '\'' +
+                ", user_nick='" + user_nick + '\'' +
+                ", user_birthday=" + user_birthday +
+                ", user_sex='" + user_sex + '\'' +
+                ", user_email='" + user_email + '\'' +
+                ", user_hometown='" + user_hometown + '\'' +
+                ", user_location='" + user_location + '\'' +
+                ", user_password='" + user_password + '\'' +
+                ", user_phone='" + user_phone + '\'' +
+                ", topicNum=" + topicNum +
+                ", user_listenInNum=" + user_listenInNum +
+                ", user_listenNum=" + user_listenNum +
+                ", user_loginTime=" + user_loginTime +
+                ", user_introduction='" + user_introduction + '\'' +
+                '}';
     }
 }
