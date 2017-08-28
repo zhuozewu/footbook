@@ -109,7 +109,7 @@
                         <td>&nbsp;</td>
                         <td align="center" valign="middle" class="wordleft">出生年月</td>
                         <td align="left" valign="middle"><select name="year" class="form2" id="year">
-                        </select>   <select name="month" class="form3" id="month">
+                        </select> <select name="month" class="form3" id="month">
                         </select>
                             <select name="date" class="form3" id="date">
                             </select></td>

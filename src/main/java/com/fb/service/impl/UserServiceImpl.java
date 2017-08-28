@@ -18,4 +18,8 @@ public class UserServiceImpl implements UserService {
     public void addUser(User user) {
         userMapper.addUser(user);
     }
+
+    public User findByLoginNameAndPassword(String name, String password) {
+        return userMapper.findByLoginNameAndPassword(name,password);
+    }
 }

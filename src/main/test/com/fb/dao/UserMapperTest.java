@@ -28,6 +28,13 @@ public class UserMapperTest {
         user.setUser_loginTime(new Date());
         user.setUser_sex("男");
         userMapper.addUser(user);
-
     }
+
+    @Test
+    public void findByLoginNameAndPassword() throws  Exception{
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
+        UserMapper userMapper = (UserMapper) applicationContext.getBean("userMapper");
+        System.out.println(userMapper.findByLoginNameAndPassword("李四","123"));
+    }
+
 }

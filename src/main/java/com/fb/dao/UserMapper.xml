@@ -5,4 +5,8 @@
         INSERT INTO fb_user(user_name,user_password,user_nick,user_sex,user_loginTime,user_birthday)
         VALUE (#{user_name},#{user_password},#{user_nick},#{user_sex},#{user_loginTime},#{user_birthday})
     </insert>
+
+    <select id="findByLoginNameAndPassword" resultType="User">
+        SELECT * FROM fb_user WHERE user_name =#{0} AND user_password = #{1}
+    </select>
 </mapper>

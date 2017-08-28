@@ -8,4 +8,6 @@ import com.fb.model.User;
  */
 public interface UserService {
     void addUser(User user);
+
+    User findByLoginNameAndPassword(String name, String password);
 }
